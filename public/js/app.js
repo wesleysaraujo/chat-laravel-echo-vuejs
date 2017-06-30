@@ -43036,6 +43036,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "form-control",
     attrs: {
       "type": "text",
+      "name": "message",
       "placeholder": "Escreva sua mensagem aqui!"
     },
     domProps: {

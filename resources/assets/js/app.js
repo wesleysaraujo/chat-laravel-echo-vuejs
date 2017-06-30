@@ -41,9 +41,7 @@ const app = new Vue({
                 this.usersInRoom.push(user);
             })
             .leaving((user) => {
-                this.usersInRoom = this.usersInRoom.filter((u) => {
-                    return u != user;
-                });
+                this.usersInRoom = this.usersInRoom.filter(u => u != user);
             })
             .listen('MessagePosted', (e) => {
             this.messages.push({
